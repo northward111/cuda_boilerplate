@@ -1,0 +1,15 @@
+*.pb.cc
+*.pb.h
+*.tmp
+*.lib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
+**/build/
+**/bin/log/
+**/lcm/*.hpp
+**/.idea
+**/cmake-build**
+third_party_win64/
