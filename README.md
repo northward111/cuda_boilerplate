@@ -32,6 +32,12 @@ __global__ void cu_dot(Eigen::Vector3d *v1, Eigen::Vector3d *v2, double *out, si
 }
 ```
 
+示例工程地址 https://github.com/northward111/cuda_boilerplate
+
+运行结果如下：
+
+![image-20210827185950023](README.assets/image-20210827185950023.png)
+
 # 注意事项
 
 核函数中不能直接调用host函数，因为核函数最终是要在gpu中运行的，支持的操作有限。
