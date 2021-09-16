@@ -39,6 +39,7 @@ double dot(const std::vector<Eigen::Vector3d> & v1, const std::vector<Eigen::Vec
     cudaGetDeviceProperties(&devProp, dev);
     std::cout << "using GPU device " << dev << ": " << devProp.name << std::endl;
     std::cout << "SM count " << devProp.multiProcessorCount << std::endl;
+    std::cout << "totalGlobalMem " << devProp.totalGlobalMem << std::endl;
     std::cout << "sharedMemPerBlock " << devProp.sharedMemPerBlock / 1024.0 << " KB" << std::endl;
     std::cout << "maxThreadsPerBlock " << devProp.maxThreadsPerBlock << std::endl;
     std::cout << "maxThreadsPerMultiProcessor " << devProp.maxThreadsPerMultiProcessor << std::endl;
